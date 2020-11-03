@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeremy Castro</title>
+    <link rel="icon" type= 'images/png' href="images/jc.png">
+   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/estilos.css">
+<!-- <link rel="stylesheet" href="css/media.css" media="
+screen and (max-width:768px)"/>
+<style>
+/* @media screen and (max-width:768px){
+    body{
+    border: 10px solid blue;
+}
+} */ -->
+<!-- </style> -->
+</head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menú"></i>
+    <header class="header">
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo.png" height="50" alt="">
+            </figure>
+        <nav class="menú">
+            <ol>
+                <li>
+                    <a class="link" href="#portafolio">Portafolio</a>
+                </li>
+                <li>
+                    <a class="link" href="#experiencia">Experiencia</a>
+                </li>
+                <li>
+                    <a class="link" href="#contacto">Trabajemos juntos</a>
+                </li>               
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <section class= "hero">
+        <div class= "container">
+        <h1>
+Hola! soy <strong> Jeremy Castro </strong><br> Frontend Developer </h1>
+       <img class= "hero-image" src="images/jeremy.jpg" width="500" height="300" alt="
+        imagen principal del sitio">
+    </div>
+    </section>
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+        <h2>Descripción</h2>
+        <article class="project">
+            <div class="project-details">
+         <h3 class="project-title"> Creación de páginas web</h3>
+        <h6 class="project-course">html/css/JavaScript</h6>
+         <p class="project-description">Empecé a programar desde muy joven aprendiendo 
+             Pseint y Raptor. Después aprendí HTml, CSS y JavaScript para la creación de 
+             páginas web, lo cual, me ha apasionado hacer código para hacer páginas web.
+             Estoy especializandome como Frontend Developer y trabajar como Programador Freelancer
+              donde día a día estoy en constante aprendizaje. Actualmente estoy trabajando en más
+               proyectos interesantes. ¿Quieres que creamos algo interesante?
+             Contáctame!
+             </p>
+        </div>
+        <figure class="project-imageContainer">
+         <img src="images/frontend.jpg" width="500" height="300" alt="imagen del proyecto">
+            </figure>
+        </article>
+    </div>
+    </section>
+    <div class="container">
+    <section id="experiencia" class="Experiencia">
+        <h2 class="Experiencia-1">Más sobre mi experiencia </h2>
+        <article class="event">
+            <div class="event-details">
+                <h3 class="event-title">Conocimientos adquiridos</h3>
+                <p class="event-description"> 
+                    <p>
+                     Html
+                    </p>
+                    <p>
+                    Css
+                    </p>
+                    <p>
+                    JavaScript
+                    </p>
+                    <p>
+                    React JS
+                    </p> 
+                    <P>
+                    Python
+                    </P>
+                    <P>
+                    Git Y github  
+                    </P>
+                    <P>
+                    Puedo trabajar de forma independiente o con un grupo de
+                    trabajo a través de Git Hub. 
+                    </P>
+                    </p>
+            </div>
+            <figure class="event-imageContainer">
+<img class="event-image" src="images/frontend_1.jpg" alt="proyecto" width="500" height="300">
+            </figure>
+        </article>
+    </div>
+    </section>
+    <section id="contacto" class="contact">
+        <div class="container">
+        <form action="/suscripcion/" class="form-email">
+            <h3>¿Creamos algo juntos?</h3>
+        <input type="text" name='email'
+         placeholder=" Déjame tu email" id="email" required>  
+        <button>
+            Enviar
+        </button>
+        </form>
+        <div class="social">
+            <a href="https://twitter.com/CastroJarama" class="social-link twitter"></a>
+            <a href="https://www.facebook.com/jeremy.castrojarama" class="social-link facebook"></a>
+            <a href="https://github.com/Jeremy-Castro" class="social-link github"></a>
+            <a href="https://www.instagram.com/jeremy_c_jarama/" class="social-link instagram"></a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+        <div>
+    <p>Creado por Jeremy Castro 2019 
+        <img src="images/logo.png" width="100" alt=""></p>
+        </div>        
+        <div>
+    <p>
+     Diseñado con amor by 
+     <a href="https://www.facebook.com/jeremy.castrojarama">@JeremyCastro</a>
+     </p>
+        </div>
+    </div>
+    </footer>
+    <script>
+    // console.log("es mi primera linea")
+    console.log();
+    const ipad = window.matchMedia("screen and (max-width: 767px)")
+    const menú = document.querySelector(".menú")  
+//    console.log(menú);
+   const burgerbutton = document.querySelector("#burger-menú")
+//    console.log(burgerbutton);
+
+
+ipad.addListener(validation)
+function validation(event){
+    if (event.matches){
+        burgerbutton.addEventListener("click", hideShow)
+    }
+    else{
+        burgerbutton.removeEventListener("click", hideShow)
+    }
+    }
+   function hideShow(){
+    if(menú.classList.contains("is-active")){
+        menú.classList.remove("is-active");
+    }
+    else{
+    menú.classList.add("is-active")
+   }
+}
+    </script>
+
+    <form action="email.php" method='post'></form>
+      
+    </form>
+</body>
+</html>
